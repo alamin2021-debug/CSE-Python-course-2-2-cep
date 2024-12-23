@@ -1,7 +1,33 @@
 #lambda_function
+#exampl_one
 
 my_numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 evens = list(filter(lambda x: x%2 == 0 , my_numbers))
-
 print(evens)
+
+
+
+#exampl_two
+#simple_function
+
+
+my_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+def square(x):
+    return x**2
+squares = list(map(square, my_numbers))
+print(squares)
+
+
+
+#example_three
+
+# List of temperatures in Celsius
+celsius = [0, 10, 20, 30, 40]
+
+# Function to convert Celsius to Fahrenheit
+def to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+# Use map to apply the conversion function to each element
+fahrenheit = list(map(to_fahrenheit, celsius))
+print(fahrenheit)
